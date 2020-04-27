@@ -38,7 +38,7 @@ curl -X POST \
 curl -X POST \
   https://maxsoft-mock-server-demo.web.app/register \
   -H 'Content-Type: application/json' \
-  -d '{"userId": "2", "email":"existing@email.com", "name": "Existing User"}'
+  -d '{"userId": "existingId", "email":"osanda.deshan@gmail.com", "name": "Existing User"}'
 ```
 
 > NOTE: You will have to use terminal to execute these curl commands or you can import [postman collection](https://www.getpostman.com/collections/4414bc745e79aedb2173)
