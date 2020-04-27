@@ -136,8 +136,8 @@ app.get('/users/:userId', (req, res) => {
 app.post('/register', (req, res) => {
   console.log('Request Body Params: ', req.body);
 
-   // Simulates username taken, if username is `taken`
-   if(req.body.hasOwnProperty('userId') && req.body.userId === "2") { //
+   // Simulates email taken, if email is `osanda.deshan@gmail.com`
+   if(req.body.hasOwnProperty('userId') && req.body.email === "osanda.deshan@gmail.com") {
      return res.status(400)
             .json(mockUser.registerFailedUsernameExists);
    }

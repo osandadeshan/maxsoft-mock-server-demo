@@ -1,6 +1,7 @@
 {
   "registerFailedUsernameExists": {
-    "message": "Username already exists."
+    "Error": "Email already exists.",
+    "message": "Given email address 'osanda.deshan@gmail.com' is already exists."
   },
   "registerSuccess": {
     "message": "Registration successful."
