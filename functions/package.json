@@ -1,0 +1,29 @@
+{
+  "name": "maxsoft-mock-server-demo",
+  "version": "1.0.0",
+  "description": "A sample project for Mock service development using express and firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase serve --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "faker": "^4.1.0",
+    "firebase-admin": "^8.11.0",
+    "firebase-functions": "^3.6.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "nodemon": "^1.19.1"
+  },
+  "engines": {
+    "node": "10"
+  },
+  "private": true
+}
