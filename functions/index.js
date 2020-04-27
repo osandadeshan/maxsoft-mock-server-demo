@@ -45,8 +45,8 @@ const mockPhotos = require('./mock-responses/photos');
 /**
  * Say hello as response
  * ----------------------------------------
- * Try: https://mock-apis-server.firebaseapp.com/say/hello
- * or with name: https://mock-apis-server.firebaseapp.com/say/hello?name=Ryan
+ * Try: https://maxsoft-mock-server-demo.web.app/say/hello
+ * or with name: https://maxsoft-mock-server-demo.web.app/say/hello?name=Osanda
  */
 app.get('/say/hello', (req, res) => {
    console.log('Request Query Params: ', req.query);
@@ -68,7 +68,7 @@ app.get('/say/hello', (req, res) => {
 /**
  * Simple request with pre-populated mock response from `mock-responses/photos.json`
  * --------------------------------------------------------------------------------------
- * Try: https://mock-apis-server.firebaseapp.com/photos
+ * Try: https://maxsoft-mock-server-demo.web.app/photos
  */
 app.get('/photos', (req, res) => {
   return res.status(200).json(mockPhotos);
@@ -80,7 +80,7 @@ app.get('/photos', (req, res) => {
 /**
  * Re-uses `mock-responses/photos.json` data to respond with single image.
  * --------------------------------------------------------------------------------------
- * Try: https://mock-apis-server.firebaseapp.com/photos/2321
+ * Try: https://maxsoft-mock-server-demo.web.app/photos/2321
  */
 app.get('/photos/:photoId', (req, res) => {
   // Returns the first item from the list, you could return random item too
@@ -94,7 +94,7 @@ app.get('/photos/:photoId', (req, res) => {
  * Provides user's information based on user ID
  * Captures dynamic params from URL (See https://expressjs.com/en/guide/routing.html)
  * ----------------------------------------
- * Try (refresh for new fake values): https://mock-apis-server.firebaseapp.com/users/myid
+ * Try (refresh for new fake values): https://maxsoft-mock-server-demo.web.app/users/myid
  */
 app.get('/users/:userId', (req, res) => {
   console.log('Request Query Params: ', req.query);
@@ -120,17 +120,17 @@ app.get('/users/:userId', (req, res) => {
  * Here is an example request with data:
  * ```
  * curl -X POST \
- *   https://mock-apis-server.firebaseapp.com/register \
+ *   https://maxsoft-mock-server-demo.web.app/register \
  *   -H 'Content-Type: application/json' \
  *   -d '{"userId": "myusername", "email":"my@email.com", "name": "New User"}'
  * ```
  *
- * Another example where request can fail if username already exists:
+ * Another example where request can fail if email already exists:
  * ```
  * curl -X POST \
- *   https://mock-apis-server.firebaseapp.com/register \
+ *   https://maxsoft-mock-server-demo.web.app/register \
  *   -H 'Content-Type: application/json' \
- *   -d '{"userId": "taken", "email":"existing@email.com", "name": "Existing User"}'
+ *   -d '{"userId": "existingId", "email":"osanda.deshan@gmail.com", "name": "Existing User"}'
  * ```
  */
 app.post('/register', (req, res) => {
@@ -157,7 +157,7 @@ app.post('/register', (req, res) => {
 /**
  * Simple request that extracts data from firebase firestore (database)
  * --------------------------------------------------------------------------------------
- * Try: https://mock-apis-server.firebaseapp.com/userProfile/bob
+ * Try: https://maxsoft-mock-server-demo.web.app/userProfile/bob
  */
 app.get('/userProfile/:userId', (req, res) => {
   var docRef = firestore.collection("userProfiles").doc(req.params.userId);
