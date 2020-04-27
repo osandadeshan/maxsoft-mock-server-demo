@@ -10,20 +10,20 @@ The APIs are defined via Express.js framework and served though Firebase cloud f
 * References: https://expressjs.com/en/guide/routing.html
 
 #### GET Routes
-1. Hello!
+1) Hello!
 https://maxsoft-mock-server-demo.web.app/say/hello?name=Osanda
 
-2. Get User Details
+2) Get User Details
 https://maxsoft-mock-server-demo.web.app/users/1
 
-3. Get large list of photos response from mocked JSON file
+3) Get large list of photos response from mocked JSON file
 https://maxsoft-mock-server-demo.web.app/photos
 
-4. Get a single photo item from mocked JSON file
+4) Get a single photo item from mocked JSON file
 https://maxsoft-mock-server-demo.web.app/photos/29647
 
 #### POST Route
-1. Register a new user
+1) Register a new user
 **Success**
 ```
 curl -X POST \
