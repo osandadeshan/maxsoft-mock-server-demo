@@ -23,7 +23,7 @@ https://maxsoft-mock-server-demo.web.app/photos
 https://maxsoft-mock-server-demo.web.app/photos/29647
 
 #### POST Route
-1. Register a new user \
+1. Register a new user
 
 **Success**
 ```
