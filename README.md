@@ -24,6 +24,7 @@ https://maxsoft-mock-server-demo.web.app/photos/29647
 
 #### POST Route
 1. Register a new user \
+
 **Success**
 ```
 curl -X POST \
